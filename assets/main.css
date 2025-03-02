@@ -13,7 +13,7 @@
  *   #b8860b; Dark Goldenrod, color for links
  */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 *{
     border:0;
@@ -30,27 +30,34 @@ body{
     background-attachment: fixed;
     color: #505050; 
     text-align:left;
-    font-family:'Roboto',sans-serif;
+    font-family:'Montserrat', sans-serif;
     font-size:1em;
     line-height:1.5em;
-    margin: 60px auto;
-    width: 1000px;
+    margin: 0px auto;
+    width: 90%;
 }
 
-a{color: #b8860b; text-decoration:none;}
-a.current{color: #52739e;}
-a.current:hover{color: #e82945;}
-a:hover{color: #b2132e;}
-a:active{color: #e82945;}
-h1,h2,h3,h4{clear:left; color: #813c54; margin:1.5em 0em 1em 0em; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
-h1{font-size:2.67em;}
+.row{display: flex;}
+
+.main_column{float: left; text-align: justify; flex: 75%}
+
+.side_column{float: left; text-align: left; flex: 25%}
+
+
+a{color: #348a42; text-decoration:none;}
+a.current{color: #2e5086;}
+a.current:hover{color: #2e5086;}
+a:hover{color: #4fb15f;}
+a:active{color: #4fb15f;}
+h1,h2,h3,h4{clear:left; color: #348a42; margin:1em 0em 1em 0em; font-family:'Montserrat'}
+h1{font-size:2.67em}
 h2{font-size:2.00em;}
 h3{font-size:1.67em;}
 h4{font-size:1.33em;}
-p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
+p{list-style:none; margin:0px auto 10px auto; padding:0px; width:95%; text-align:justify; float: left;}
 li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
-ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; text-align:left;}
-ul li{list-style:none; margin:0px auto 0px auto; padding:0px; text-align:left;}
+ul{list-style:none; margin:14px auto 14px auto; padding:0px; width:90%; text-align:left;}
+ul li{list-style: disc; margin:0px auto 0px auto; padding:0px; text-align:left;}
 i,em{font-style:italic;}
 b,strong{font-weight:bold;}
 sup{
@@ -64,7 +71,7 @@ sub{
     line-height: 0;
 }
 table{
-    width: 1000px;
+    width: 100%;
     margin: 12px auto 24px auto;
     float: center;
     /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
@@ -76,15 +83,77 @@ th,td{
     /*border: 1px solid black;*/
 }
 
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #2b5532;
+  overflow: hidden;
+/*  color: #fafafa;*/
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
 /* Website Banner */
-.banner {position: relative; font-family:'Roboto Slab',serif;}
-.top-left {font-size:5.33em; color: #505050; background: #fafafa; text-align: center; width: 1000px; height: 67px; position: absolute; padding: 36px 0 0 0; top: 0px;}
-.bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
+.responsive {max-width: 100%; width: 100%; height: auto}
+.banner { position: relative; font-family:'Montserrat';}
+.top-left {font-size:2.5em; line-height: 80%; color: #505050; background: rgba(250, 250, 250, 0.6); text-align: center; width: 100%; height: 50px; position: absolute; padding: 20px 0 0 0; top: 0px; text-shadow: 0px 0px 6px #fafafa;}
+/*.top-left {font-size:2.5em; line-height: 80%; color: #fafafa; text-align: center; width: 100%; height: 67px; position: absolute; padding: 10px 0 0 0; top: 0px;}*/
+.bottom-right {font-size:2em; color: #fafafa; line-height: 1em; width: auto; height: 50px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
 
 /* Conference Title Logo */
-.title1{color: #b2132e; text-shadow: 1px 1px 3px #c0c0c0;} 
-.title2{color: #52739e; text-shadow: 1px 1px 3px #c0c0c0;}
-.year{color: #505050; font-size:0.67em; font-weight: lighter;}
+.title1{color: #2e5086; font-weight: 300} 
+.title2{color: #348a42; font-weight: 300; }
+.year{color: #348a42; font-size:0.9em; font-weight: 300; }
+
+.button1 {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+.button1 {
+  background-color: #2b5532;
+  color: #f2f2f2;
+/*  border: 2px solid #04AA6D;*/
+}
+
+.button1:hover {
+  background-color: #ddd;
+  color: black;
+}
 
 /* Navigation Links (Home, Registration, etc) */
 table.navigation{width:800px;}
@@ -98,8 +167,8 @@ td.sponsor img{width: 100%}
 /* The Table on the Program Page */
 td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
 td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
-td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: #813c54; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0; }
-td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
+td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: #813c54; height:32px; font-family:'Montserrat',serif; text-shadow: 1px 1px 2px #d0d0d0; }
+td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px; font-family:'Montserrat',serif; text-shadow: 1px 1px 2px #d0d0d0;}
 td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px}
 td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px}
 td.abstract img{display: block; margin: 4px auto 8px auto}
@@ -118,12 +187,47 @@ td.sponsor img{width: 100%}
 footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
 /* My hacky way of making the site mobile-friendly */
-@media only screen and (max-width: 1100px) {
+/*@media only screen and (max-width: 1100px) {
     h2{font-size:3.00em;}
     p{font-size:1.5em; line-height:1.5em;}
     th,td,tr{font-size:1.5em; line-height:1.5em;}
     td.date{font-size:1em; padding-top:0.5em;}
     td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
     table.footer{font-size:0.33em;}
+}*/
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
 }
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .main_column {
+    width: 100%;
+  }
+  .side_column {
+    width: 100%;
+  }
+}
+
 
