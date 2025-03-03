@@ -34,14 +34,14 @@ body{
     font-size:1em;
     line-height:1.5em;
     margin: 0px auto;
-    width: 90%;
+    width: 100%;
 }
 
-.row{display: flex;}
+.row{display: flex; width: 90%; margin-left: 5%; margin-right: 10%}
 
 .main_column{float: left; text-align: justify; flex: 75%}
 
-.side_column{float: left; text-align: left; flex: 25%}
+.side_column{float: left; text-align: left; flex: 20%}
 
 
 a{color: #348a42; text-decoration:none;}
@@ -51,8 +51,8 @@ a:hover{color: #4fb15f;}
 a:active{color: #4fb15f;}
 h1,h2,h3,h4{clear:left; color: #348a42; margin:1em 0em 1em 0em; font-family:'Montserrat'}
 h1{font-size:2.67em}
-h2{font-size:2.00em;}
-h3{font-size:1.67em;}
+h2{font-size:2.00em}
+h3{font-size:1.67em; color: #2e5086}
 h4{font-size:1.33em;}
 p{list-style:none; margin:0px auto 10px auto; padding:0px; width:95%; text-align:justify; float: left;}
 li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
@@ -104,7 +104,7 @@ th,td{
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: #2e5086;
 }
 
 /* Add an active class to highlight the current page */
@@ -119,11 +119,21 @@ th,td{
 }
 
 /* Website Banner */
-.responsive {max-width: 100%; width: 100%; height: auto}
-.banner { position: relative; font-family:'Montserrat';}
-.top-left {font-size:2.5em; line-height: 80%; color: #505050; background: rgba(250, 250, 250, 0.6); text-align: center; width: 100%; height: 50px; position: absolute; padding: 20px 0 0 0; top: 0px; text-shadow: 0px 0px 6px #fafafa;}
+.responsive {
+/*    max-width: 100%; 
+    max-height: 100%;*/
+    width: 100%; 
+    height: 300px;
+    object-fit: cover;     
+/*position: relative; /* allows repositioning */
+left: 100%; /* move the whole width of the image to the right */
+/*  margin-left: -50%;*/
+}
+.banner { position: relative; font-family:'Montserrat'; overflow: hidden}
+.top-left {font-size:2.5em; line-height: 80%; color: #505050; background: rgba(250, 250, 250, 0.6); overflow-y: auto; text-align: center; width: 100%; position: absolute; padding: 20px 0 20px 0px; top: 0px; text-shadow: 0px 0px 6px #fafafa;}
 /*.top-left {font-size:2.5em; line-height: 80%; color: #fafafa; text-align: center; width: 100%; height: 67px; position: absolute; padding: 10px 0 0 0; top: 0px;}*/
-.bottom-right {font-size:2em; color: #fafafa; line-height: 1em; width: auto; height: 50px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
+.bottom-right1 {font-size:1em; color: #6e6e6e; line-height: 1em; width: auto; height: 20px; padding: 0px 27px 0px 0px; text-align: right; position: relative; bottom: 0px; right: 0px;}
+.bottom-right2 {font-size:2em; color: #fafafa; line-height: 1em; width: auto; height: 20px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 15px; right: 0px; text-shadow: 0px 0px 6px #000000;}
 
 /* Conference Title Logo */
 .title1{color: #2e5086; font-weight: 300} 
