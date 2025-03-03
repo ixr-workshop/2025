@@ -37,11 +37,11 @@ body{
     width: 100%;
 }
 
-.row{display: flex; width: 90%; margin-left: 5%; margin-right: 10%}
+.row{display: flex; width: 90%; margin-left: 5%; margin-right: 10%; column-gap: 2rem;flex-wrap: wrap;}
 
-.main_column{float: left; text-align: justify; flex: 75%}
+.main_column{float: left; text-align: justify; width: calc(75% - 1.5rem)}
 
-.side_column{float: left; text-align: left; flex: 20%}
+.side_column{float: left; text-align: left; width: calc(20% - 0.5rem)}
 
 
 a{color: #348a42; text-decoration:none;}
@@ -237,6 +237,12 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
   }
   .side_column {
     width: 100%;
+  }
+  .title1, .title2, .year{
+    font-size:75%;
+  }
+  .bottom-right2{
+    font-size:1.75em;
   }
 }
 
