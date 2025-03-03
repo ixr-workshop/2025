@@ -55,7 +55,7 @@ h2{font-size:2.00em}
 h3{font-size:1.67em; color: #2e5086}
 h4{font-size:1.33em;}
 p{list-style:none; margin:0px auto 10px auto; padding:0px; width:95%; text-align:justify; float: left;}
-li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
+li a, p a {text-decoration:underline; }
 ul{list-style:none; margin:14px auto 14px auto; padding:0px; width:90%; text-align:left;}
 ul li{list-style: disc; margin:0px auto 0px auto; padding:0px; text-align:left;}
 i,em{font-style:italic;}
