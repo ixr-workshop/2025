@@ -139,6 +139,7 @@ left: 100%; /* move the whole width of the image to the right */
 .title1{color: #2e5086; font-weight: 300} 
 .title2{color: #348a42; font-weight: 300; }
 .year{color: #348a42; font-size:0.9em; font-weight: 300; }
+.subtitle1{font-weight: 300}
 
 .button1 {
   border: none;
@@ -238,11 +239,8 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
   .side_column {
     width: 100%;
   }
-  .title1, .title2, .year{
+  .title1, .title2, .year, .subtitle1{
     font-size:75%;
-  }
-  .bottom-right2{
-    font-size:1.2em;
   }
 }
 
