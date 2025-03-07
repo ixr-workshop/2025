@@ -169,7 +169,7 @@ left: 100%; /* move the whole width of the image to the right */
 .people_pic{
   width: 200px; 
   vertical-align: middle;
-  margin: 0px 20px 0px 20px;
+  margin: 0px 6px 0px 6px;
 }
 
 /* Navigation Links (Home, Registration, etc) */
@@ -250,4 +250,7 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
   }
 }
 
+@media screen and (max-width: 600px) {
+  td{display:block;}
+}
 
